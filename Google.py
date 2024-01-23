@@ -1,4 +1,3 @@
-#!/bin/python
 ##################################################
 #### Author = PANGLIMA JATIM 404              ####
 #### Github = https://github.com/Projeckerror ####
@@ -6,85 +5,7 @@
 ##################################################
 # Jangan di rubah cuk nanti ERROR !
 # Jangan Lupa Subscribe chennel YouTube gw
-
-# module
-try:
-   import os,sys,time,requests,bs4
-   from bs4 import BeautifulSoup
-   from time import sleep
-   from os import system
-except:
-     system("pip install requests bs4")
-# update & upgrade tools
-     os.system("pkg update && pkg upgrade")
-     os.system("pkg install figlet")
-# Module 2
-import os
-import random
-import sys
-import time
-def mengetik(s):
-   for c in s +"\n":
-     sys.stdout.write(c)
-     sys.stdout.flush()
-     time.sleep(random.random()*0.2)
-# Animasi 
-import os
-os.system("clear")
-mengetik("\033[1;93mselamat datang di Tools Panglima Jatim 404")
-import os
-os.system("clear")
-mengetik("\033[1;93mJangan Lupa Subcribe Chennel gw ")
-import os
-os.system("clear")
-mengetik("\033[1;93mini adalah sebuah program Google yang di buat oleh Panglima Jatim 404")
-import os
-os.system("clear")
-mengetik("\033[1;93msemoga Program ini bermanfaat untuk kalian semua ok")
-import os
-os.system("clear")
-# Media Sosial
-print("\033[36;1m[ Subscribe dulu YouTube gw ]")
-time.sleep(1)
-os.system("xdg-open https://youtube.com/@PANGLIMAJATIM404")
-import os
-os.system("clear")
-time.sleep(2)
-# tampilan
-def jalan():
-    tampil = """
-\033[33;1m           Selamat Datang di Tools Panglima Jatim
-\033[1;97m===============================================================
-\033[92m Author : Panglima Jatim
-\033[1;34m Github : https://github.com/Projeckerror
-\033[93m Team   : Mafia Teknologi
-\033[1;97m==============================================================="""
-    system("clear")
-    sleep(1)
-    print("\033[36;1m")
-    baner = """
-   _     _     _     _     _     _    
-  / \   / \   / \   / \   / \   / \   
- ( G ) ( o ) ( o ) ( g ) ( l ) ( e )  
-  \_/   \_/   \_/   \_/   \_/   \_/  
-              \033[38;2;255;165;0m Panglima Jatim 404
-  """
-    print(baner)
-    sleep(1)
-    print(tampil)
-    # isi data
-    file = input("Masukan Pencarian: ")
-    ulr = f"https://www.google.com/search?&q={file}"
-    r = requests.get(ulr)
-    cari = BeautifulSoup(r.text,"html.parser")
-    a = cari.find("div",class_="BNeawe").text
-    # hasil pencarian
-    print("\033[37;1m")    
-    print("Hasil \33[36;1m=> ",a)
-    # database,waktu,tgl
-    import datetime
-    now = datetime.datetime.now()
-    print("\033[1;97m")
-    print(now.strftime("%Y-%m-%d %H:%M:%S"))
-
-jalan()
+################
+import base64
+exec(base64.b64decode('IyEvYmluL3B5dGhvbgojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwojIyMjIEF1dGhvciA9IFBBTkdMSU1BIEpBVElNIDQwNCAgICAgICAgICAgICAgIyMjIwojIyMjIEdpdGh1YiA9IGh0dHBzOi8vZ2l0aHViLmNvbS9Qcm9qZWNrZXJyb3IgIyMjIwojIyMjICBUaW1lICA9IE1hZmlhIFRla25vbG9naSAgICAgICAgICAgICAgICAgIyMjIwojIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwojIEphbmdhbiBkaSBydWJhaCBjdWsgbmFudGkgRVJST1IgIQojIEphbmdhbiBMdXBhIFN1YnNjcmliZSBjaGVubmVsIFlvdVR1YmUgZ3cKCiMgbW9kdWxlCnRyeToKICAgaW1wb3J0IG9zLHN5cyx0aW1lLHJlcXVlc3RzLGJzNAogICBmcm9tIGJzNCBpbXBvcnQgQmVhdXRpZnVsU291cAogICBmcm9tIHRpbWUgaW1wb3J0IHNsZWVwCiAgIGZyb20gb3MgaW1wb3J0IHN5c3RlbQpleGNlcHQ6CiAgICAgc3lzdGVtKCJwaXAgaW5zdGFsbCByZXF1ZXN0cyBiczQiKQojIHVwZGF0ZSAmIHVwZ3JhZGUgdG9vbHMKICAgICBvcy5zeXN0ZW0oInBrZyB1cGRhdGUgJiYgcGtnIHVwZ3JhZGUiKQogICAgIG9zLnN5c3RlbSgicGtnIGluc3RhbGwgZmlnbGV0IikKIyBNb2R1bGUgMgppbXBvcnQgb3MKaW1wb3J0IHJhbmRvbQppbXBvcnQgc3lzCmltcG9ydCB0aW1lCmRlZiBtZW5nZXRpayhzKToKICAgZm9yIGMgaW4gcyArIlxuIjoKICAgICBzeXMuc3Rkb3V0LndyaXRlKGMpCiAgICAgc3lzLnN0ZG91dC5mbHVzaCgpCiAgICAgdGltZS5zbGVlcChyYW5kb20ucmFuZG9tKCkqMC4yKQojIEFuaW1hc2kgCmltcG9ydCBvcwpvcy5zeXN0ZW0oImNsZWFyIikKbWVuZ2V0aWsoIlwwMzNbMTs5M21zZWxhbWF0IGRhdGFuZyBkaSBUb29scyBQYW5nbGltYSBKYXRpbSA0MDQiKQppbXBvcnQgb3MKb3Muc3lzdGVtKCJjbGVhciIpCm1lbmdldGlrKCJcMDMzWzE7OTNtSmFuZ2FuIEx1cGEgU3ViY3JpYmUgQ2hlbm5lbCBndyAiKQppbXBvcnQgb3MKb3Muc3lzdGVtKCJjbGVhciIpCm1lbmdldGlrKCJcMDMzWzE7OTNtaW5pIGFkYWxhaCBzZWJ1YWggcHJvZ3JhbSBHb29nbGUgeWFuZyBkaSBidWF0IG9sZWggUGFuZ2xpbWEgSmF0aW0gNDA0IikKaW1wb3J0IG9zCm9zLnN5c3RlbSgiY2xlYXIiKQptZW5nZXRpaygiXDAzM1sxOzkzbXNlbW9nYSBQcm9ncmFtIGluaSBiZXJtYW5mYWF0IHVudHVrIGthbGlhbiBzZW11YSBvayIpCmltcG9ydCBvcwpvcy5zeXN0ZW0oImNsZWFyIikKIyBNZWRpYSBTb3NpYWwKcHJpbnQoIlwwMzNbMzY7MW1bIFN1YnNjcmliZSBkdWx1IFlvdVR1YmUgZ3cgXSIpCnRpbWUuc2xlZXAoMSkKb3Muc3lzdGVtKCJ4ZGctb3BlbiBodHRwczovL3lvdXR1YmUuY29tL0BQQU5HTElNQUpBVElNNDA0IikKaW1wb3J0IG9zCm9zLnN5c3RlbSgiY2xlYXIiKQp0aW1lLnNsZWVwKDIpCiMgdGFtcGlsYW4KZGVmIGphbGFuKCk6CiAgICB0YW1waWwgPSAiIiIKXDAzM1szMzsxbSAgICAgICAgICAgU2VsYW1hdCBEYXRhbmcgZGkgVG9vbHMgUGFuZ2xpbWEgSmF0aW0KXDAzM1sxOzk3bT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpcMDMzWzkybSBBdXRob3IgOiBQYW5nbGltYSBKYXRpbQpcMDMzWzE7MzRtIEdpdGh1YiA6IGh0dHBzOi8vZ2l0aHViLmNvbS9Qcm9qZWNrZXJyb3IKXDAzM1s5M20gVGVhbSAgIDogTWFmaWEgVGVrbm9sb2dpClwwMzNbMTs5N209PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0iIiIKICAgIHN5c3RlbSgiY2xlYXIiKQogICAgc2xlZXAoMSkKICAgIHByaW50KCJcMDMzWzM2OzFtIikKICAgIGJhbmVyID0gIiIiCiAgIF8gICAgIF8gICAgIF8gICAgIF8gICAgIF8gICAgIF8gICAgCiAgLyBcICAgLyBcICAgLyBcICAgLyBcICAgLyBcICAgLyBcICAgCiAoIEcgKSAoIG8gKSAoIG8gKSAoIGcgKSAoIGwgKSAoIGUgKSAgCiAgXF8vICAgXF8vICAgXF8vICAgXF8vICAgXF8vICAgXF8vICAKICAgICAgICAgICAgICBcMDMzWzM4OzI7MjU1OzE2NTswbSBQYW5nbGltYSBKYXRpbSA0MDQKICAiIiIKICAgIHByaW50KGJhbmVyKQogICAgc2xlZXAoMSkKICAgIHByaW50KHRhbXBpbCkKICAgICMgaXNpIGRhdGEKICAgIGZpbGUgPSBpbnB1dCgiTWFzdWthbiBQZW5jYXJpYW46ICIpCiAgICB1bHIgPSBmImh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vc2VhcmNoPyZxPXtmaWxlfSIKICAgIHIgPSByZXF1ZXN0cy5nZXQodWxyKQogICAgY2FyaSA9IEJlYXV0aWZ1bFNvdXAoci50ZXh0LCJodG1sLnBhcnNlciIpCiAgICBhID0gY2FyaS5maW5kKCJkaXYiLGNsYXNzXz0iQk5lYXdlIikudGV4dAogICAgIyBoYXNpbCBwZW5jYXJpYW4KICAgIHByaW50KCJcMDMzWzM3OzFtIikgICAgCiAgICBwcmludCgiSGFzaWwgXDMzWzM2OzFtPT4gIixhKQogICAgIyBkYXRhYmFzZSx3YWt0dSx0Z2wKICAgIGltcG9ydCBkYXRldGltZQogICAgbm93ID0gZGF0ZXRpbWUuZGF0ZXRpbWUubm93KCkKICAgIHByaW50KCJcMDMzWzE7OTdtIikKICAgIHByaW50KG5vdy5zdHJmdGltZSgiJVktJW0tJWQgJUg6JU06JVMiKSkKCmphbGFuKCkK'))
+#####################
